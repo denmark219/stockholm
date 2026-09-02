@@ -1,0 +1,634 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Emily's Stockholm Trip</title>
+<link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWgAAAFoCAIAAAD1h/aCAAAEgUlEQVR4nO3WwQmDUBRFQZV06c5linInaSY1SWo4C/loZiq48ODw5un9mZ7o3NbRE66y7MfoCfy7ZfQA4H6EA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8jm86sdQKMaQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQPZa9mP0hkuc2zp6wlWeejJuxMcBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZD/4vwzzwlWH7AAAAABJRU5ErkJggg==">
+<link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWgAAAFoCAIAAAD1h/aCAAAEgUlEQVR4nO3WwQmDUBRFQZV06c5linInaSY1SWo4C/loZiq48ODw5un9mZ7o3NbRE66y7MfoCfy7ZfQA4H6EA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8iEA8jm86sdQKMaQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQCYcQPZa9mP0hkuc2zp6wlWeejJuxMcBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZMIBZD/4vwzzwlWH7AAAAABJRU5ErkJggg==">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Stockholm Trip">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="mobile-web-app-capable" content="yes">
+<style>
+  :root {
+    --navy: #0b2545;
+    --blue: #13315c;
+    --gold: #f4b942;
+    --bg: #eef2f6;
+    --card-bg: #ffffff;
+    --text: #1c2b3a;
+    --muted: #5c6b7a;
+    --border: #dfe6ee;
+    --icelandair-blue: #0057b7;
+    --sixt-orange: #ff5f00;
+    --norwegian-red: #c8102e;
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 520px; margin: 0 auto; padding-bottom: 48px; }
+  header.hero {
+    background: linear-gradient(160deg, var(--navy), var(--blue) 70%);
+    color: #fff;
+    padding: 36px 24px 28px;
+    border-radius: 0 0 28px 28px;
+    box-shadow: 0 4px 18px rgba(11,37,69,0.25);
+  }
+  header.hero .kicker {
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 12px;
+    color: var(--gold);
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  header.hero h1 {
+    margin: 0 0 8px;
+    font-size: 26px;
+    line-height: 1.25;
+  }
+  header.hero .dates {
+    font-size: 15px;
+    color: #cfd9e6;
+  }
+  .flag-stripe {
+    display: flex;
+    gap: 4px;
+    margin-top: 16px;
+  }
+  .flag-stripe span {
+    height: 4px;
+    flex: 1;
+    border-radius: 2px;
+    background: var(--gold);
+    opacity: 0.85;
+  }
+  main { padding: 18px 16px 8px; }
+  details.day {
+    background: var(--card-bg);
+    border-radius: 16px;
+    margin-bottom: 12px;
+    box-shadow: 0 1px 3px rgba(20,30,45,0.08);
+    border: 1px solid var(--border);
+    overflow: hidden;
+  }
+  details.day summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 16px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  details.day summary::-webkit-details-marker { display: none; }
+  .summary-left { display: flex; align-items: center; gap: 14px; min-width: 0; }
+  .date-pill {
+    flex-shrink: 0;
+    background: var(--navy);
+    color: #fff;
+    font-weight: 700;
+    font-size: 12.5px;
+    letter-spacing: 0.03em;
+    padding: 8px 10px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 54px;
+  }
+  .summary-text { min-width: 0; }
+  .dow { font-weight: 700; font-size: 15.5px; color: var(--text); }
+  .summary-desc {
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .summary-right { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+  .day-badge {
+    font-size: 11.5px;
+    font-weight: 700;
+    color: var(--blue);
+    background: #e8eef7;
+    padding: 4px 8px;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+  .chevron {
+    font-size: 16px;
+    color: var(--muted);
+    transition: transform 0.2s ease;
+    display: inline-block;
+  }
+  details[open] .chevron { transform: rotate(90deg); }
+  .day-body {
+    padding: 4px 14px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-top: 1px solid var(--border);
+    padding-top: 14px;
+  }
+  .card {
+    background: #fbfcfe;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px;
+  }
+  .card-head {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+  .card-title { font-weight: 700; font-size: 15px; }
+  .icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px; height: 26px;
+    border-radius: 8px;
+    background: #e8eef7;
+    font-size: 14px;
+  }
+  .icon-parking { background: var(--navy); color: #fff; font-weight: 800; }
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 800;
+    font-size: 12.5px;
+    letter-spacing: 0.04em;
+    padding: 5px 9px;
+    border-radius: 7px;
+  }
+  .badge-icelandair {
+    background: var(--icelandair-blue);
+    color: #fff;
+  }
+  .badge-norwegian {
+    background: var(--norwegian-red);
+    color: #fff;
+  }
+  .badge-icon { width: 14px; height: 14px; }
+  .badge-sixt {
+    background: var(--sixt-orange);
+    color: #111;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 14px;
+    padding: 4px 10px;
+    border-radius: 4px;
+  }
+  .route { font-size: 14px; color: var(--text); font-weight: 600; margin-bottom: 8px; }
+  .detail-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13.5px;
+    padding: 5px 0;
+    border-bottom: 1px dashed var(--border);
+  }
+  .detail-row:last-of-type { border-bottom: none; }
+  .label { color: var(--muted); }
+  .value { font-weight: 600; text-align: right; }
+  .mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: 0.02em; }
+  .status-note { font-size: 12.5px; color: var(--muted); margin: 4px 0 8px; }
+  .btn-row { display: flex; flex-direction: column; gap: 8px; margin-top: 10px; }
+  .btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13.5px;
+    font-weight: 700;
+    padding: 10px 12px;
+    border-radius: 9px;
+  }
+  .btn-map { background: #e8f0fe; color: #1a4fa0; }
+  .btn-call { background: #e6f7ec; color: #147a3a; }
+  .btn-flight { background: #eef1fb; color: var(--icelandair-blue); }
+  .voucher {
+    background: #ffffff;
+    padding: 10px 4px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    margin: 0 -14px 4px;
+    cursor: zoom-in;
+  }
+  .voucher-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    pointer-events: none;
+  }
+  .voucher-tip {
+    font-size: 12px;
+    color: var(--muted);
+    text-align: center;
+    margin: 10px 0 10px;
+    line-height: 1.4;
+  }
+  .lightbox {
+    position: fixed;
+    inset: 0;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 28px;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s ease;
+  }
+  .lightbox.open { opacity: 1; pointer-events: auto; }
+  .lightbox img {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+  }
+  .lightbox-hint {
+    margin-top: 20px;
+    color: #8a8a8a;
+    font-size: 13.5px;
+    text-align: center;
+  }
+  .note-card .card-head { margin-bottom: 0; }
+  .instructions-text {
+    font-size: 13.5px;
+    color: var(--text);
+    line-height: 1.5;
+    margin: 6px 0 0;
+  }
+  footer.foot {
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+    padding: 18px 24px 30px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="kicker">Bon Voyage</div>
+    <h1>Emily's Trip to Stockholm</h1>
+    <div class="dates">September 9 – 14, 2026</div>
+    <div class="flag-stripe"><span></span><span></span><span></span><span></span></div>
+  </header>
+  <main>
+    
+<details class="day">
+  <summary>
+    <div class="summary-left">
+      <div class="date-pill">SEP 9</div>
+      <div class="summary-text">
+        <div class="dow">Wednesday</div>
+        <div class="summary-desc">Depart Chicago → Reykjavik → Stockholm</div>
+      </div>
+    </div>
+    <div class="summary-right">
+      <span class="day-badge">✈ Travel Day</span>
+      <span class="chevron">▸</span>
+    </div>
+  </summary>
+  <div class="day-body">
+    
+  <div class="card parking-card">
+    <div class="card-head">
+      <span class="icon icon-parking">P</span>
+      <span class="card-title">Pre-Flight Parking — Drop Off</span>
+    </div>
+    <div class="voucher" onclick="openLightbox(this.querySelector('img'))">
+      <img class="voucher-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAa4AAAExCAIAAACrp9FbAAARx0lEQVR4nO3dcUzU9ePH8deF6AgdMxRQEJVBkResNszEUY41l/tiVo60tKkJy5kj21hqk5HpLCbOnBr/nGtzqJlbunKradofLsX0j5I0U3egoQkM8aZ0ovK73x/v+uyzz+fuQg2FeD7+Oj/3uXt/7o6efT73ed+dp7i4WADQvz30oDcAAB48UggAUrFLqNeYMGGCtZ01NTWhUKiyslLSwoULrXXq6uokpaenR7qT6dOnW3dSWVkZCoVqamocT4K5eWdn58CBAx1X7dmzJxQKLVy40FoSafQoNzfcG2+cP39e0sCBAzs7O0Oh0OjRo8Pe3DAbP336dMdyx+h1dXXWYzdPnd2ePXskTZgwwf10uUe3P3bDjG4eu8P58+fDvnCRRnc8diPS625n3/g7euHM6HbW6Onp6Y6rov/VOW5u3/hIL5x74y1mdPsLZ2ff+CiP3dzccL9wUZ66xsZGa6H9z8b+zP/jX537mXf/Fxf2sT8o9u6xVwgAHCADACkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBABJAx70BgDoX0KhUCgUksfTE3ft8Xg8d3XP7BUCuH88Hk9I6pEOSvJ4QlIoFLqLm5JCAPfJXx3sYXdXQ1II4L+GFALoxXrouPjfGIgUAgApBABSCKA380j356CaeYUAeimP9NckwbubIHMn2CsEAFIIAKQQAEQKAUCkEABECgFApBBAr+KRHorwNVtRrrp3pBBAL2Ja5/7SQY/tqp4YlxQC6EWsydSO5Fn//L+emW1NCgH0IqFwNezpDooUAuhtIn33as91UKQQQC/krmGPdlCkEEDvZK9hT3dQvfybaUpKSl544QVzOS8vT9LkyZOty0ZaWlplZWVCQkKkO5k1a9aTTz5pLls3r6ystK9jbh4TE7NixYquri77VY899pik//3vf8nJyfYtcY8e5eaO0R1bmJCQUFlZGRMTExMTI2nJkiVXr15139wavbKy0r3cMXpqaqr12N0jZmdnV1ZWmnUc3KPbH7t9uXns7seicC9cpNEdj92I9Lrb2Tf+jl44M7p9TfszHwgE7FdF/6tz3Ny+8ZFeOPfGW8zo9hfOvSXuFy7s6264Xzj3OtbN7f8F2f9s7M/8P/7V2Vczozv/i/N4Ro4c6d4k2b6Jy968kMIfKodd+R55iouLHYu++OKLf+/+AeAvUXbuHvJ4ZH4XtBv3Y02s+cc7jO7VV1+1LvfqvUIA/c39+vUTJ1IIoLe4o+nT/+7XuXLa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" alt="Pre-Flight Parking barcode">
+    </div>
+    <div class="voucher-tip">🔍 Tap the barcode to enlarge full-screen for scanning — and swipe up to raise your screen brightness first (a website can't do that part for you).</div>
+    <div class="detail-row"><span class="label">Code</span><span class="value mono">U3BELZ-78F8</span></div>
+    <div class="detail-row"><span class="label">Parking start</span><span class="value">9/9/2026, 2:00 PM</span></div>
+    <div class="detail-row"><span class="label">Parking end</span><span class="value">9/14/2026, 10:00 PM</span></div>
+    <div class="btn-row">
+      <a class="btn btn-map" href="https://www.google.com/maps/search/?api=1&query=4155%20Mannheim%20Road%2C%20Schiller%20Park%2C%20IL">📍 4155 Mannheim Road, Schiller Park, IL</a>
+      <a class="btn btn-call" href="tel:+18476789234">📞 Call 847-678-9234</a>
+    </div>
+  </div>
+
+  <div class="card flight-card">
+    <div class="card-head">
+      <span class="badge badge-icelandair"><svg viewBox="0 0 24 24" class="badge-icon" fill="currentColor"><path d="M2 16l7-1.5V8.8L4.5 7 5 5.5l5 1V3.2C10 2.5 10.9 2 12 2s2 .5 2 1.2v3.3l5-1 .5 1.5L15 8.8v5.7l7 1.5v1.6l-7-1V19l2 1.5V22l-3.5-1-3.5 1v-1.5L14 19v-2.4l-7 1z"/></svg>ICELANDAIR</span>
+      <span class="card-title">Flight FI852</span>
+    </div>
+    <div class="route">O'Hare (ORD) → Reykjavík (KEF)</div>
+    <div class="detail-row"><span class="label">Departs</span><span class="value">7:25 PM (Wed, Sept 9)</span></div>
+    <div class="detail-row"><span class="label">Arrives</span><span class="value">6:40 AM (Thu, Sept 10)</span></div>
+    
+    <div class="btn-row">
+      <a class="btn btn-flight" href="https://www.google.com/search?q=Icelandair%20FI852%20flight%20status">✈️ Check Flight Status</a>
+    </div>
+  </div>
+
+  <div class="card flight-card">
+    <div class="card-head">
+      <span class="badge badge-icelandair"><svg viewBox="0 0 24 24" class="badge-icon" fill="currentColor"><path d="M2 16l7-1.5V8.8L4.5 7 5 5.5l5 1V3.2C10 2.5 10.9 2 12 2s2 .5 2 1.2v3.3l5-1 .5 1.5L15 8.8v5.7l7 1.5v1.6l-7-1V19l2 1.5V22l-3.5-1-3.5 1v-1.5L14 19v-2.4l-7 1z"/></svg>ICELANDAIR</span>
+      <span class="card-title">Flight FI306</span>
+    </div>
+    <div class="route">Reykjavík (KEF) → Stockholm (ARN)</div>
+    <div class="detail-row"><span class="label">Departs</span><span class="value">7:35 AM (Thu, Sept 10)</span></div>
+    <div class="detail-row"><span class="label">Arrives</span><span class="value">12:45 PM (Thu, Sept 10)</span></div>
+    
+    <div class="btn-row">
+      <a class="btn btn-flight" href="https://www.google.com/search?q=Icelandair%20FI306%20flight%20status">✈️ Check Flight Status</a>
+    </div>
+  </div>
+
+  </div>
+</details>
+
+<details class="day">
+  <summary>
+    <div class="summary-left">
+      <div class="date-pill">SEP 10</div>
+      <div class="summary-text">
+        <div class="dow">Thursday</div>
+        <div class="summary-desc">Arrive Stockholm & check in</div>
+      </div>
+    </div>
+    <div class="summary-right">
+      <span class="day-badge">🏨 Arrival</span>
+      <span class="chevron">▸</span>
+    </div>
+  </summary>
+  <div class="day-body">
+    
+  <div class="card note-card">
+    <div class="card-head">
+      <span class="icon">🚕</span>
+      <span class="card-title">Taxi to Hotel</span>
+    </div>
+    <p class="instructions-text">Stockholm ARN Taxi Stand is directly outside of Terminal 5's arrival hall.</p>
+  </div>
+
+  <div class="card hotel-card">
+    <div class="card-head">
+      <span class="icon icon-hotel">🛏️</span>
+      <span class="card-title">Hotel Sven Vintappare</span>
+    </div>
+    <div class="detail-row"><span class="label">Stay</span><span class="value">2 nights — 9/10/2026 to 9/12/2026</span></div>
+    <div class="detail-row"><span class="label">Confirmation #</span><span class="value mono">36174</span></div>
+    <div class="btn-row">
+      <a class="btn btn-map" href="https://www.google.com/maps/search/?api=1&query=Sven%20Vintappares%20gr%C3%A4nd%203%2C%20111%2027%20Stockholm%2C%20Sweden">📍 Sven Vintappares gränd 3, 111 27 Stockholm, Sweden</a>
+    </div>
+  </div>
+
+  </div>
+</details>
+
+<details class="day">
+  <summary>
+    <div class="summary-left">
+      <div class="date-pill">SEP 11</div>
+      <div class="summary-text">
+        <div class="dow">Friday</div>
+        <div class="summary-desc">Free day — Joan arrives</div>
+      </div>
+    </div>
+    <div class="summary-right">
+      <span class="day-badge">👋 Joan Arrives</span>
+      <span class="chevron">▸</span>
+    </div>
+  </summary>
+  <div class="day-body">
+    
+  <div class="card note-card">
+    <div class="card-head">
+      <span class="icon">☀️</span>
+      <span class="card-title">Free Day</span>
+    </div>
+  </div>
+
+  <div class="card note-card">
+    <div class="card-head">
+      <span class="icon">👋</span>
+      <span class="card-title">Joan arrives in Stockholm</span>
+    </div>
+  </div>
+
+  <div class="card flight-card">
+    <div class="card-head">
+      <span class="badge badge-norwegian"><svg viewBox="0 0 24 24" class="badge-icon" fill="currentColor"><path d="M2 16l7-1.5V8.8L4.5 7 5 5.5l5 1V3.2C10 2.5 10.9 2 12 2s2 .5 2 1.2v3.3l5-1 .5 1.5L15 8.8v5.7l7 1.5v1.6l-7-1V19l2 1.5V22l-3.5-1-3.5 1v-1.5L14 19v-2.4l-7 1z"/></svg>NORWEGIAN</span>
+      <span class="card-title">Flight 842</span>
+    </div>
+    <div class="route">Bergen (BGO – Flesland) → Stockholm (ARN – Arlanda)</div>
+    <div class="detail-row"><span class="label">Departs</span><span class="value">4:05 PM (Fri, Sept 11)</span></div>
+    <div class="detail-row"><span class="label">Arrives</span><span class="value">5:25 PM local time (Fri, Sept 11) · Terminal 5</span></div>
+    
+    <div class="btn-row">
+      <a class="btn btn-flight" href="https://www.google.com/search?q=Norwegian%20Air%20Shuttle%20842%20flight%20status">✈️ Check Flight Status</a>
+    </div>
+  </div>
+
+  <div class="card note-card">
+    <div class="card-head">
+      <span class="icon">🚕</span>
+      <span class="card-title">Joan's Taxi to Hotel</span>
+    </div>
+    <p class="instructions-text">Joan to take a taxi to Hotel Sven Vintappare.</p>
+    <div class="btn-row">
+      <a class="btn btn-map" href="https://www.google.com/maps/search/?api=1&query=Sven%20Vintappares%20gr%C3%A4nd%203%2C%20111%2027%20Stockholm%2C%20Sweden">📍 Sven Vintappares gränd 3, 111 27 Stockholm, Sweden</a>
+    </div>
+  </div>
+
+  </div>
+</details>
+
+<details class="day">
+  <summary>
+    <div class="summary-left">
+      <div class="date-pill">SEP 12</div>
+      <div class="summary-text">
+        <div class="dow">Saturday</div>
+        <div class="summary-desc">Pick up rental car & travel to Västervik</div>
+      </div>
+    </div>
+    <div class="summary-right">
+      <span class="day-badge">🚗 Change of City</span>
+      <span class="chevron">▸</span>
+    </div>
+  </summary>
+  <div class="day-body">
+    
+  <div class="card car-card">
+    <div class="card-head">
+      <span class="badge badge-sixt">SIXT</span>
+      <span class="card-title">Car Rental</span>
+    </div>
+    <div class="detail-row"><span class="label">Rental period</span><span class="value">9/12/2026 to 9/14/2026</span></div>
+    <div class="detail-row"><span class="label">Pickup</span><span class="value">Sheraton Stockholm Hotel, anytime after 8:00 AM</span></div>
+    <div class="detail-row"><span class="label">Booking #</span><span class="value mono">9735362012</span></div>
+    <div class="btn-row">
+      <a class="btn btn-map" href="https://www.google.com/maps/search/?api=1&query=Sheraton%20Stockholm%20Hotel%2C%20Vasagatan%204%2C%20111%2020%20Stockholm">📍 Sheraton Stockholm Hotel, Vasagatan 4, 111 20 Stockholm</a>
+    </div>
+  </div>
+
+  <div class="card hotel-card">
+    <div class="card-head">
+      <span class="icon icon-hotel">🛏️</span>
+      <span class="card-title">Slottsholmen Hotell</span>
+    </div>
+    <div class="detail-row"><span class="label">Stay</span><span class="value">2 nights — 9/12/2026 to 9/14/2026</span></div>
+    <div class="detail-row"><span class="label">Confirmation #</span><span class="value mono">BH29XR26ZS</span></div>
+    <div class="btn-row">
+      <a class="btn btn-map" href="https://www.google.com/maps/search/?api=1&query=Slottsholmsv%C3%A4gen%2010%2C%20593%2038%20V%C3%A4stervik%2C%20Sweden">📍 Slottsholmsvägen 10, 593 38 Västervik, Sweden</a>
+    </div>
+  </div>
+
+  </div>
+</details>
+
+<details class="day">
+  <summary>
+    <div class="summary-left">
+      <div class="date-pill">SEP 13</div>
+      <div class="summary-text">
+        <div class="dow">Sunday</div>
+        <div class="summary-desc">Free day — day trip to Gamleby</div>
+      </div>
+    </div>
+    <div class="summary-right">
+      <span class="day-badge">Free Day</span>
+      <span class="chevron">▸</span>
+    </div>
+  </summary>
+  <div class="day-body">
+    
+  <div class="card note-card">
+    <div class="card-head">
+      <span class="icon">☀️</span>
+      <span class="card-title">Free Day — Day Trip to Gamleby</span>
+    </div>
+  </div>
+
+  </div>
+</details>
+
+<details class="day">
+  <summary>
+    <div class="summary-left">
+      <div class="date-pill">SEP 14</div>
+      <div class="summary-text">
+        <div class="dow">Monday</div>
+        <div class="summary-desc">Return car & fly home to Chicago</div>
+      </div>
+    </div>
+    <div class="summary-right">
+      <span class="day-badge">🏠 Travel Day</span>
+      <span class="chevron">▸</span>
+    </div>
+  </summary>
+  <div class="day-body">
+    
+  <div class="card car-card">
+    <div class="card-head">
+      <span class="badge badge-sixt">SIXT</span>
+      <span class="card-title">Car Rental</span>
+    </div>
+    <div class="detail-row"><span class="label">Rental period</span><span class="value">Return by 9/14/2026</span></div>
+    <div class="detail-row"><span class="label">Drop-off</span><span class="value">Long Term Parking Alfa/Beta area, Vingvägen 4</span></div>
+    <div class="detail-row"><span class="label">Booking #</span><span class="value mono">9735362012</span></div>
+    <div class="btn-row">
+      <a class="btn btn-map" href="https://www.google.com/maps/search/?api=1&query=Long%20Term%20Parking%20Alfa%20/%20Beta%20area%2C%20Vingv%C3%A4gen%204%2C%20190%2060%20Stockholm%2C%20Sweden">📍 Long Term Parking Alfa/Beta, Vingvägen 4, Stockholm</a>
+    </div>
+  </div>
+
+  <div class="card flight-card">
+    <div class="card-head">
+      <span class="badge badge-icelandair"><svg viewBox="0 0 24 24" class="badge-icon" fill="currentColor"><path d="M2 16l7-1.5V8.8L4.5 7 5 5.5l5 1V3.2C10 2.5 10.9 2 12 2s2 .5 2 1.2v3.3l5-1 .5 1.5L15 8.8v5.7l7 1.5v1.6l-7-1V19l2 1.5V22l-3.5-1-3.5 1v-1.5L14 19v-2.4l-7 1z"/></svg>ICELANDAIR</span>
+      <span class="card-title">Flight FI307</span>
+    </div>
+    <div class="route">Stockholm (ARN) → Reykjavík (KEF)</div>
+    <div class="detail-row"><span class="label">Departs</span><span class="value">1:45 PM (Mon, Sept 14)</span></div>
+    <div class="detail-row"><span class="label">Arrives</span><span class="value">3:05 PM (Mon, Sept 14)</span></div>
+    
+    <div class="btn-row">
+      <a class="btn btn-flight" href="https://www.google.com/search?q=Icelandair%20FI307%20flight%20status">✈️ Check Flight Status</a>
+    </div>
+  </div>
+
+  <div class="card flight-card">
+    <div class="card-head">
+      <span class="badge badge-icelandair"><svg viewBox="0 0 24 24" class="badge-icon" fill="currentColor"><path d="M2 16l7-1.5V8.8L4.5 7 5 5.5l5 1V3.2C10 2.5 10.9 2 12 2s2 .5 2 1.2v3.3l5-1 .5 1.5L15 8.8v5.7l7 1.5v1.6l-7-1V19l2 1.5V22l-3.5-1-3.5 1v-1.5L14 19v-2.4l-7 1z"/></svg>ICELANDAIR</span>
+      <span class="card-title">Flight FI853</span>
+    </div>
+    <div class="route">Reykjavík (KEF) → Chicago (ORD)</div>
+    <div class="detail-row"><span class="label">Departs</span><span class="value">4:25 PM (Mon, Sept 14)</span></div>
+    <div class="detail-row"><span class="label">Arrives</span><span class="value">6:15 PM (Mon, Sept 14)</span></div>
+    
+    <div class="btn-row">
+      <a class="btn btn-flight" href="https://www.google.com/search?q=Icelandair%20FI853%20flight%20status">✈️ Check Flight Status</a>
+    </div>
+  </div>
+
+  <div class="card note-card pickup-instructions">
+    <div class="card-head">
+      <span class="icon">🚗</span>
+      <span class="card-title">Picking Up the Car from Pre-Flight Parking</span>
+    </div>
+    <p class="instructions-text">For Terminal 5 pickup: call to arrange your ride once you've cleared customs. Proceed to the <strong>lower level, outer curb, outside door 5E</strong> for pickup.</p>
+    <div class="btn-row">
+      <a class="btn btn-call" href="tel:+18476789234">📞 Call 847-678-9234</a>
+    </div>
+  </div>
+
+  <div class="card parking-card">
+    <div class="card-head">
+      <span class="icon icon-parking">P</span>
+      <span class="card-title">Pre-Flight Parking — Pickup</span>
+    </div>
+    <div class="voucher" onclick="openLightbox(this.querySelector('img'))">
+      <img class="voucher-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAa4AAAExCAIAAACrp9FbAAARx0lEQVR4nO3dcUzU9ePH8deF6AgdMxRQEJVBkResNszEUY41l/tiVo60tKkJy5kj21hqk5HpLCbOnBr/nGtzqJlbunKradofLsX0j5I0U3egoQkM8aZ0ovK73x/v+uyzz+fuQg2FeD7+Oj/3uXt/7o6efT73ed+dp7i4WADQvz30oDcAAB48UggAUrFLqNeYMGGCtZ01NTWhUKiyslLSwoULrXXq6uokpaenR7qT6dOnW3dSWVkZCoVqamocT4K5eWdn58CBAx1X7dmzJxQKLVy40FoSafQoNzfcG2+cP39e0sCBAzs7O0Oh0OjRo8Pe3DAbP336dMdyx+h1dXXWYzdPnd2ePXskTZgwwf10uUe3P3bDjG4eu8P58+fDvnCRRnc8diPS625n3/g7euHM6HbW6Onp6Y6rov/VOW5u3/hIL5x74y1mdPsLZ2ff+CiP3dzccL9wUZ66xsZGa6H9z8b+zP/jX537mXf/Fxf2sT8o9u6xVwgAHCADACkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBACRQgAQKQQAkUIAECkEAJFCABApBABJAx70BgDoX0KhUCgUksfTE3ft8Xg8d3XP7BUCuH88Hk9I6pEOSvJ4QlIoFLqLm5JCAPfJXx3sYXdXQ1II4L+GFALoxXrouPjfGIgUAgApBABSCKA380j356CaeYUAeimP9NckwbubIHMn2CsEAFIIAKQQAEQKAUCkEABECgFApBBAr+KRHorwNVtRrrp3pBBAL2Ja5/7SQY/tqp4YlxQC6EWsydSO5Fn//L+emW1NCgH0IqFwNezpDooUAuhtIn33as91UKQQQC/krmGPdlCkEEDvZK9hT3dQvfybaUpKSl544QVzOS8vT9LkyZOty0ZaWlplZWVCQkKkO5k1a9aTTz5pLls3r6ystK9jbh4TE7NixYquri77VY899pik//3vf8nJyfYtcY8e5eaO0R1bmJCQUFlZGRMTExMTI2nJkiVXr15139wavbKy0r3cMXpqaqr12N0jZmdnV1ZWmnUc3KPbH7t9uXns7seicC9cpNEdj92I9Lrb2Tf+jl44M7p9TfszHwgE7FdF/6tz3Ny+8ZFeOPfGW8zo9hfOvSXuFy7s6264Xzj3OtbN7f8F2f9s7M/8P/7V2Vczozv/i/N4Ro4c6d4k2b6Jy968kMIfKodd+R55iouLHYu++OKLf+/+AeAvUXbuHvJ4ZH4XtBv3Y02s+cc7jO7VV1+1LvfqvUIA/c39+vUTJ1IIoLe4o+nT/+7XuXLa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" alt="Pre-Flight Parking barcode">
+    </div>
+    <div class="voucher-tip">🔍 Tap the barcode to enlarge full-screen for scanning — and swipe up to raise your screen brightness first (a website can't do that part for you).</div>
+    <div class="detail-row"><span class="label">Code</span><span class="value mono">U3BELZ-78F8</span></div>
+    <div class="detail-row"><span class="label">Parking start</span><span class="value">9/9/2026, 2:00 PM</span></div>
+    <div class="detail-row"><span class="label">Parking end</span><span class="value">9/14/2026, 10:00 PM</span></div>
+    <div class="btn-row">
+      <a class="btn btn-map" href="https://www.google.com/maps/search/?api=1&query=4155%20Mannheim%20Road%2C%20Schiller%20Park%2C%20IL">📍 4155 Mannheim Road, Schiller Park, IL</a>
+      <a class="btn btn-call" href="tel:+18476789234">📞 Call 847-678-9234</a>
+    </div>
+  </div>
+
+  </div>
+</details>
+
+  </main>
+  <footer class="foot">Tap a day to see the details. This page works fully offline — no signal or wifi needed. Safe travels! 💛</footer>
+</div>
+
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <img id="lightbox-img" src="" alt="Enlarged barcode">
+  <div class="lightbox-hint">Tap anywhere to close</div>
+</div>
+
+<script>
+  function openLightbox(imgEl) {
+    var overlay = document.getElementById('lightbox');
+    var img = document.getElementById('lightbox-img');
+    img.src = imgEl.src;
+    overlay.classList.add('open');
+  }
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('open');
+  }
+</script>
+</body>
+</html>
