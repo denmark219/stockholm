@@ -10,6 +10,10 @@
 <meta name="apple-mobile-web-app-title" content="Stockholm Trip">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="mobile-web-app-capable" content="yes">
+<meta name="app-version" content="09.05.2026.02">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <style>
   :root {
     --navy: #0b2545;
@@ -287,6 +291,13 @@
     font-size: 12px;
     padding: 18px 24px 30px;
   }
+  .version-tag {
+    display: block;
+    margin-top: 6px;
+    font-size: 10.5px;
+    color: #9aa7b5;
+    letter-spacing: 0.02em;
+  }
 </style>
 </head>
 <body>
@@ -536,6 +547,7 @@
     <div class="btn-row">
       <a class="btn btn-map" href="https://www.google.com/maps/search/?api=1&query=Slottsholmsv%C3%A4gen%2010%2C%20593%2038%20V%C3%A4stervik%2C%20Sweden">📍 Slottsholmsvägen 10, 593 38 Västervik, Sweden</a>
     </div>
+    <p class="instructions-text" style="margin-top:10px;">✅ <strong>FYI:</strong> Early check-in has been arranged — 1:00 PM.</p>
   </div>
 
   </div>
@@ -657,7 +669,7 @@
 </details>
 
   </main>
-  <footer class="foot">Tap a day to see the details. This page works fully offline — no signal or wifi needed. Safe travels! 💛</footer>
+  <footer class="foot">Tap a day to see the details. Safe travels! 💛<span class="version-tag">Version 09.05.2026.02</span></footer>
 </div>
 
 <div id="lightbox" class="lightbox" onclick="closeLightbox()">
@@ -675,6 +687,36 @@
   function closeLightbox() {
     document.getElementById('lightbox').classList.remove('open');
   }
+
+  // --- Auto-update check ---
+  // Home-screen bookmarks on iOS can keep showing a stale cached copy of this
+  // page indefinitely. Every time the page is opened or brought back to the
+  // foreground, fetch a fresh copy over the network (bypassing the cache)
+  // and compare its version. If it's newer, reload so the latest content
+  // always shows without anyone having to manually refresh.
+  (function () {
+    var CURRENT_VERSION = document.querySelector('meta[name="app-version"]').getAttribute('content');
+
+    function checkForUpdate() {
+      fetch(location.pathname + '?_=' + Date.now(), { cache: 'no-store' })
+        .then(function (res) { return res.text(); })
+        .then(function (html) {
+          var match = html.match(/<meta name="app-version" content="([^"]+)"/);
+          if (match && match[1] !== CURRENT_VERSION) {
+            location.reload();
+          }
+        })
+        .catch(function () {
+          // Offline or unreachable — just keep showing the cached copy.
+        });
+    }
+
+    document.addEventListener('visibilitychange', function () {
+      if (document.visibilityState === 'visible') checkForUpdate();
+    });
+    window.addEventListener('pageshow', checkForUpdate);
+    checkForUpdate();
+  })();
 </script>
 </body>
 </html>
