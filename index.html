@@ -271,6 +271,16 @@
     line-height: 1.5;
     margin: 6px 0 0;
   }
+  .fyi-card .card-title { font-size: 14.5px; }
+  .fyi-list {
+    margin: 8px 0 0;
+    padding-left: 20px;
+    font-size: 13px;
+    color: var(--text);
+    line-height: 1.5;
+  }
+  .fyi-list li { margin-bottom: 7px; }
+  .fyi-list li:last-child { margin-bottom: 0; }
   footer.foot {
     text-align: center;
     color: var(--muted);
@@ -337,6 +347,19 @@
     </div>
   </div>
 
+  <div class="card note-card fyi-card">
+    <div class="card-head">
+      <span class="icon">🛂</span>
+      <span class="card-title">FYI: Layover in Iceland (KEF)</span>
+    </div>
+    <ul class="fyi-list">
+      <li><strong>Passport Control:</strong> Yes — you'll pass through Schengen passport control at Keflavík (KEF) before heading to your connecting gate.</li>
+      <li><strong>Checked Bags:</strong> No — booked on a single Icelandair ticket, your bags are checked straight through to Stockholm. You don't pick them up in Iceland.</li>
+      <li><strong>Customs:</strong> No — customs happens at your final destination.</li>
+      <li><strong>55-Minute Layover:</strong> Tight, but Icelandair designs its schedule around these short North America-to-Europe transfers. Walk quickly to your next gate after passport control.</li>
+    </ul>
+  </div>
+
   <div class="card flight-card">
     <div class="card-head">
       <span class="badge badge-icelandair"><svg viewBox="0 0 24 24" class="badge-icon" fill="currentColor"><path d="M2 16l7-1.5V8.8L4.5 7 5 5.5l5 1V3.2C10 2.5 10.9 2 12 2s2 .5 2 1.2v3.3l5-1 .5 1.5L15 8.8v5.7l7 1.5v1.6l-7-1V19l2 1.5V22l-3.5-1-3.5 1v-1.5L14 19v-2.4l-7 1z"/></svg>ICELANDAIR</span>
@@ -345,10 +368,21 @@
     <div class="route">Reykjavík (KEF) → Stockholm (ARN)</div>
     <div class="detail-row"><span class="label">Departs</span><span class="value">7:35 AM (Thu, Sept 10)</span></div>
     <div class="detail-row"><span class="label">Arrives</span><span class="value">12:45 PM (Thu, Sept 10)</span></div>
-    
+
     <div class="btn-row">
       <a class="btn btn-flight" href="https://www.google.com/search?q=Icelandair%20FI306%20flight%20status">✈️ Check Flight Status</a>
     </div>
+  </div>
+
+  <div class="card note-card fyi-card">
+    <div class="card-head">
+      <span class="icon">🧳</span>
+      <span class="card-title">FYI: Arrival in Stockholm (ARN)</span>
+    </div>
+    <ul class="fyi-list">
+      <li><strong>Passport Control:</strong> None — you already entered the Schengen Area in Iceland.</li>
+      <li><strong>Customs &amp; Baggage:</strong> Yes — collect your checked luggage at the baggage carousel and pass through customs (green/red channels) as you exit the Stockholm airport.</li>
+    </ul>
   </div>
 
   </div>
@@ -375,7 +409,7 @@
       <span class="icon">🚕</span>
       <span class="card-title">Taxi to Hotel</span>
     </div>
-    <p class="instructions-text">Stockholm ARN Taxi Stand is directly outside of Terminal 5's arrival hall.</p>
+    <p class="instructions-text">Stockholm ARN Taxi Stand is directly outside of Terminal 5's arrival hall. Use a recommended company — <strong>Taxi Stockholm, Taxi Kurir, Sverige Taxi, or TopCab</strong> — and ask for a <strong>fixed price</strong> to Stora Nygatan 15. It should not cost more than <strong>900 SEK</strong>.</p>
   </div>
 
   <div class="card hotel-card">
@@ -386,8 +420,20 @@
     <div class="detail-row"><span class="label">Stay</span><span class="value">2 nights — 9/10/2026 to 9/12/2026</span></div>
     <div class="detail-row"><span class="label">Confirmation #</span><span class="value mono">36174</span></div>
     <div class="btn-row">
-      <a class="btn btn-map" href="https://www.google.com/maps/search/?api=1&query=Sven%20Vintappares%20gr%C3%A4nd%203%2C%20111%2027%20Stockholm%2C%20Sweden">📍 Sven Vintappares gränd 3, 111 27 Stockholm, Sweden</a>
+      <a class="btn btn-map" href="https://www.google.com/maps/search/?api=1&query=Sven%20Vintappares%20gr%C3%A4nd%203%20(Stora%20Nygatan%2015)%2C%20111%2027%20Stockholm%2C%20Sweden">📍 Sven Vintappares gränd 3 (Stora Nygatan 15), 111 27 Stockholm, Sweden</a>
     </div>
+  </div>
+
+  <div class="card note-card">
+    <div class="card-head">
+      <span class="icon">🔑</span>
+      <span class="card-title">Check-In Instructions</span>
+    </div>
+    <p class="instructions-text">Reception is open daily <strong>7:00 AM – 1:00 PM</strong>. Arriving after that? Use door code <strong>0047</strong> to enter the main door. The stairs are immediately to the left; your room key will be waiting in the door lock, labeled with your name.</p>
+    <div class="btn-row">
+      <a class="btn btn-call" href="tel:+468224140">📞 Call +46 (8) 22 41 40 for day-of-arrival help</a>
+    </div>
+    <p class="instructions-text" style="margin-top:8px;margin-bottom:0;">Let it ring — the phone is always answered, it just takes several rings.</p>
   </div>
 
   </div>
@@ -442,9 +488,9 @@
       <span class="icon">🚕</span>
       <span class="card-title">Joan's Taxi to Hotel</span>
     </div>
-    <p class="instructions-text">Joan to take a taxi to Hotel Sven Vintappare.</p>
+    <p class="instructions-text">Joan to take a taxi to Hotel Sven Vintappare. Use a recommended company (Taxi Stockholm, Taxi Kurir, Sverige Taxi, or TopCab) and ask for a fixed price — should not be more than 900 SEK.</p>
     <div class="btn-row">
-      <a class="btn btn-map" href="https://www.google.com/maps/search/?api=1&query=Sven%20Vintappares%20gr%C3%A4nd%203%2C%20111%2027%20Stockholm%2C%20Sweden">📍 Sven Vintappares gränd 3, 111 27 Stockholm, Sweden</a>
+      <a class="btn btn-map" href="https://www.google.com/maps/search/?api=1&query=Sven%20Vintappares%20gr%C3%A4nd%203%20(Stora%20Nygatan%2015)%2C%20111%2027%20Stockholm%2C%20Sweden">📍 Sven Vintappares gränd 3 (Stora Nygatan 15), 111 27 Stockholm, Sweden</a>
     </div>
   </div>
 
